@@ -1,0 +1,9 @@
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #E6E9F0, #EAEDED);
+  border-radius: 8px;
+}
+

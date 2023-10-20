@@ -1,0 +1,37 @@
+.PetTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .PetTable thead {
+    background-color: #34495E;
+    color: #EAEDED;
+  }
+  
+  .PetTable th, .PetTable td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #BDC3C7;
+  }
+  
+  .PetTable tbody tr:hover {
+    background-color: #F2F3F4;
+  }
+  
+  .PetTable th {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  
+  .PetName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2C3E50;
+  }
+  
+  .PetDetail {
+    color: #7F8C8D;
+  }
+  
