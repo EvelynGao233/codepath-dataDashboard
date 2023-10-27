@@ -1,5 +1,6 @@
 import React from 'react';
 import './PetList.css';
+import { Link } from 'react-router-dom';
 
 const PetList = ({ pets, searchTerm, filter }) => {
   const filteredPets = pets
@@ -12,7 +13,7 @@ const PetList = ({ pets, searchTerm, filter }) => {
       if (filter.age && pet.age.toLowerCase() !== filter.age.toLowerCase()) {
         includePet = false;
       }
-      if (filter.color && !pet.colors.primary.toLowerCase().includes(filter.color.toLowerCase())) {
+      if (filter.color && (pet.colors?.primary ? !pet.colors.primary.toLowerCase().includes(filter.color.toLowerCase()) : true)) {
         includePet = false;
       }
       return includePet;
@@ -32,10 +33,10 @@ const PetList = ({ pets, searchTerm, filter }) => {
       <tbody>
         {filteredPets.map(pet => (
           <tr key={pet.id}>
-            <td className="PetName">{pet.name}</td>
+            <td className="PetName"><Link to={`/pet/${pet.id}`}>{pet.name}</Link></td>
             <td className="PetDetail">{pet.breeds.primary}</td>
             <td className="PetDetail">{pet.age}</td>
-            <td className="PetDetail">{pet.colors.primary}</td>
+            <td className="PetDetail">{pet.colors?.primary || 'N/A'}</td>
             <td className="PetDetail">{pet.contact.address.city}, {pet.contact.address.state}</td>
           </tr>
         ))}
@@ -45,4 +46,3 @@ const PetList = ({ pets, searchTerm, filter }) => {
 };
 
 export default PetList;
-

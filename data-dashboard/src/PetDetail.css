@@ -1,0 +1,27 @@
+.PetCard {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+.PetImage {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #7F8C8D;
+    font-size: 1rem;
+    padding: 10px 0;  
+}
+
+
+h1 {
+    color: #7F8C8D;
+}

@@ -3,6 +3,14 @@ import PetList from './PetList';
 import Summary from './Summary';
 import SearchFilter from './SearchFilter';
 import './App.css'
+import Dashboard from './Dashboard.jsx';
+import PetDetail from './PetDetail.jsx';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+
 function App() {
   const [pets, setPets] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -39,12 +47,14 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Summary pets={pets} />
-      <SearchFilter setSearchTerm={setSearchTerm} setFilter={setFilter} />
-      <PetList pets={pets} searchTerm={searchTerm} filter={filter} />
-
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Dashboard pets={pets} searchTerm={searchTerm} setSearchTerm={setSearchTerm} filter={filter} setFilter={setFilter} />} />
+          <Route path="/pet/:id" element={<PetDetail pets={pets} />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
