@@ -4,7 +4,7 @@ Submitted by: **Yuxin Gao**
 
 This web app: **Finds Your Dream Pet!**
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/EvelynGao233/codepath-dataDashboard/blob/main/Kapture%202023-10-27%20at%2019.37.30.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/EvelynGao233/codepath-dataDashboard/blob/main/Kapture%202023-10-28%20at%2013.55.08.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with Kap  
